@@ -1,0 +1,27 @@
+unit uCliente;
+
+interface
+
+type
+  TCliente = class
+  private
+
+  published
+
+  Fnome: string;
+  procedure Setnome(const Value: string);
+  property nome : string read Fnome write Setnome;
+  class procedure register;
+  end;
+implementation
+
+{ TCliente }
+
+procedure TCliente.Setnome(const Value: string);
+begin
+  Fnome := Value;
+end;
+
+initia
+
+end.
